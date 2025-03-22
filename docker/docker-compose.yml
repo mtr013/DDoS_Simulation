@@ -1,0 +1,19 @@
+version: '3'
+services:
+  victim:
+    image: ubuntu
+    container_name: victim
+    networks:
+      - ddos_network
+    command: ["sleep", "infinity"]
+
+  attacker:
+    image: ubuntu
+    container_name: attacker
+    networks:
+      - ddos_network
+    command: ["sleep", "infinity"]
+
+networks:
+  ddos_network:
+    driver: bridge

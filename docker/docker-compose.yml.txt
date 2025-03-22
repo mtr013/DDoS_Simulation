@@ -1,0 +1,13 @@
+version: '3'
+services:
+  victim:
+    image: some-victim-image
+    networks:
+      - my_network
+  attacker:
+    image: some-attacker-image
+    networks:
+      - my_network
+networks:
+  my_network:
+    driver: bridge
