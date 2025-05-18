@@ -81,7 +81,7 @@ These are loaded automatically by the real-time detection script. You can retrai
 - RAM: ≥ 8 GB recommended
 - Docker + Kathará
 
-## Folder Structure
+## Right Folder Structure (after execution)
 
 ```bash
 DDoS_Simulation/
